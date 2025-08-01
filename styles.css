@@ -44,6 +44,17 @@ body {
     align-items: center;
 }
 
+.navbar.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled nav a {
+    color: #000000;
+}
+
+
 /*.navbar .logo {
     font-weight: 800;
     font-size: 1.2rem;
@@ -62,6 +73,25 @@ body {
 
 .navbar nav a:hover {
     color: #313534;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .navbar nav a {
+        margin-left: 0;
+        font-size: 1rem;
+    }
 }
 
 .hero {
@@ -119,6 +149,15 @@ body {
     align-items: center; /* Centra horizontalmente */
 }
 
+@media (max-width: 480px) {
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .logo-hero {
+        max-width: 280px;
+    }
+}
 
 .btn {
     background-color: #CE8346;
@@ -208,8 +247,6 @@ body {
     text-align: center;
 }
 
-
-
 .content {
     max-width: 1100px;
     margin: auto;
@@ -250,6 +287,22 @@ body {
 .card:hover {
     transform: translateY(-5px);
 }
+
+@media (max-width: 480px) {
+    .card {
+        padding: 1rem;
+        max-width: 95%;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+    }
+}
+
 
 .clientes-grid {
     display: grid;
@@ -428,6 +481,9 @@ img, iframe, video {
         grid-template-columns: 1fr;
     }
 }
+
+
+
 
 .card {
     position: relative;
