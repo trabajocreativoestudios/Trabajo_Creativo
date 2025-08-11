@@ -25,19 +25,19 @@ body {
 .fondo1 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url("/assets/bg/upscalemedia-transformed.jpeg");
+        url("assets/bg/upscalemedia-transformed.jpeg");
 }
 
 .fondo2 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url("/assets/bg/amigos.png");
+        url("assets/bg/amigos.png");
 }
 
 .fondo3 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url("/assets/bg/hombre.png");
+        url("assets/bg/hombre.png");
 }
 
 
@@ -829,5 +829,6 @@ video::-webkit-media-controls-start-playback-button {
         grid-template-columns: 1fr;
     }
 }
+
 
 
