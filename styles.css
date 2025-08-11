@@ -25,7 +25,7 @@ body {
 .fondo1 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url("/Trabajo_Creativo/assets/bg/upscalemedia-transformed.jpeg");
+        url("/assets/bg/upscalemedia-transformed.jpeg");
 }
 
 .fondo2 {
@@ -829,6 +829,7 @@ video::-webkit-media-controls-start-playback-button {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
