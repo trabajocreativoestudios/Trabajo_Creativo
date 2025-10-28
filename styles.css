@@ -25,21 +25,20 @@ body {
 .fondo1 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url("/assets/bg/upscalemedia-transformed.jpg");
+        url("assets/bg/upscalemedia-transformed.jpeg");
 }
 
 .fondo2 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url("/assets/bg/amigos.png");
+        url("assets/bg/amigos.png");
 }
 
 .fondo3 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url("/assets/bg/hombre.png");
+        url("assets/bg/hombre.png");
 }
-
 
 /* Para que las secciones respiren dentro del bloque */
 .bloque .section,
@@ -88,13 +87,13 @@ body {
 .whatsapp-float img {
     width: 100%;
     height: 100%;
-    border-radius: 5%;
+    border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
 .whatsapp-float:hover img {
-    transform: scale(1.1);
+    transform: scale(0);
 }
 
 /*#video-bg {
@@ -309,7 +308,6 @@ body {
     }
 }
 
-
 .section-bg {
     position: absolute;
     top: 0;
@@ -433,13 +431,17 @@ body {
     max-height: 120px;
     padding: 10px; /* para que la sombra no se corte */
     border-radius: 10px; /* opcional, suaviza esquinas */
+    background-color: #2c2c2cc7; /* sin fondo sólido */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8); /* sombra difuminada */
     transition: transform 0.4s ease, filter 0.3s ease, box-shadow 0.3s ease;
     filter: grayscale(100%) brightness(0.8);
+    align-items: center;
 }
 
 .cliente-logo:hover {
     transform: scale(1.1) rotate(1deg);
     filter: grayscale(0%) brightness(1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9); /* sombra más intensa al hover */
 }
 
 
@@ -486,7 +488,6 @@ footer {
 }
 
 .hidden {
-    opacity: 0;
     transform: translateY(40px);
     transition: all 0.6s ease;
 }
@@ -512,9 +513,9 @@ footer {
         padding: 2rem;
     }
 
-    .logo-hero {
+/*    .logo-hero {
         max-width: 80%;
-    }
+    }*/
 
     .container {
         flex-direction: column !important;
@@ -828,10 +829,22 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 
+.btn-glass {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 999px; /* efecto píldora */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.027); /* semi-transparente */
+    backdrop-filter: blur(8px) saturate(100%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
 
-
-
-
-
-
-
+.btn-glass:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.089);
+}
